@@ -1,0 +1,10 @@
+version: "2.2"
+services:
+  dynacorpweb1:
+    build: .
+    container_name: dynacorpweb
+    ports:
+      - "80:80"
+    image: dynacorpweb:1.0
+    environment:
+      - DYNAWEB_DB=dynadb
